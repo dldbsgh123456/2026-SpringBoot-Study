@@ -1,4 +1,4 @@
-# 🌱 Spring 학습 정리
+# 🌱 Spring-Boot 학습 정리
 
 ### 정리
 
