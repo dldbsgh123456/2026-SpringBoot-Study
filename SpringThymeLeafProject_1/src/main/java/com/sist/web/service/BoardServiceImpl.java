@@ -5,6 +5,7 @@ import org.springframework.stereotype.Service;
 
 import com.sist.web.entity.*;
 import com.sist.web.repository.*;
+import com.sist.web.vo.BoardDTO;
 
 import lombok.RequiredArgsConstructor;
 @Service
@@ -19,7 +20,7 @@ public class BoardServiceImpl implements BoardService{
    }
 
    @Override
-   public List<BoardEntity> boardListData(int start) {
+   public List<BoardDTO> boardListData(int start) {
 	// TODO Auto-generated method stub
 	return dao.boardListData(start);
    }

@@ -9,5 +9,5 @@ public class SpringThymeLeafProject1Application {
 	public static void main(String[] args) {
 		SpringApplication.run(SpringThymeLeafProject1Application.class, args);
 	}
-
+   
 }

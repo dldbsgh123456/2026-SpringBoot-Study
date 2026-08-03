@@ -22,6 +22,11 @@ h3{
     <div class="row">
       <h3>ThymeLeaf를 이용한 게시판</h3>
       <table class="table">
+        <tr>
+            <a href="/board/insert" class="btn btn-sm btn-primary">새글</a>
+        </tr>
+      </table>
+      <table class="table">
         <tr class="table">
           <th width=10% class="text-center">번호</th>
           <th width=45% class="text-center">제목</th>
@@ -40,7 +45,7 @@ h3{
           <td width=10% class="text-center" th:text="${vo.no}"></td>
           <td width=45%><a th:href="@{/board/detail(no=${vo.no})}">[[${vo.subject}]]</a></td>
           <td width=15% class="text-center" th:text=${vo.name}></td>
-          <td width=20% class="text-center" th:text=${vo.regdate}></td>
+          <td width=20% class="text-center" th:text=${vo.dbday}></td>
           <td width=10% class="text-center" th:text=${vo.hit}></td>
         </tr>
         <tr>

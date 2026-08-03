@@ -7,16 +7,17 @@ import org.springframework.stereotype.Repository;
 
 import java.util.*;
 import com.sist.web.entity.*;
+import com.sist.web.vo.*;
 // 단점 : JOIN이 어렵다 / SubQuery를 지원하지 않는다
 // MyBatis 8:2 JPA
 @Repository
 public interface BoardRepository extends JpaRepository<BoardEntity,Integer>{
     public BoardEntity findByNo(int no); // 상세보기
     // 직접 SQL 문장 생성해도 됨 => findAll(Page)
-    @Query(value="SELECT * FROM board ORDER BY no DESC "
+    @Query(value="SELECT no,subject,name,hit,TO_CHAR(regdate,'yyyy-MM-dd') as dbday FROM jpaboard ORDER BY no DESC "
                 +"OFFSET :start ROWS FETCH NEXT 10 ROWS ONLY",
                 nativeQuery = true) // SQL을 JPQL로 변경없이 문장 그대로 
-    public List<BoardEntity> boardListData(@Param("start") Integer start);
+    public List<BoardDTO> boardListData(@Param("start") Integer start);
     /*
      *   findBy
      *   find SELECT *
