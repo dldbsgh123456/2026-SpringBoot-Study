@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<style type="text/css">
+.container{
+   margin-top: 50px;
+}
+.row{
+  margin: 0px auto;
+  width: 900px;
+}
+h3{
+  text-align: center;
+}
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <h3>ThymeLeaf를 이용한 게시판</h3>
+      <table class="table">
+        <tr class="table">
+          <th width=10% class="text-center">번호</th>
+          <th width=45% class="text-center">제목</th>
+          <th width=15% class="text-center">이름</th>
+          <th width=20% class="text-center">작성일</th>
+          <th width=10% class="text-center">조회수</th>
+        </tr>
+        <!-- 
+           for(BoardVO vo:list) => EL
+           
+           1. 제어문
+           2. a = link시 처리
+              href="@{URL(?에 들어가는 값 처리)}"
+         -->
+        <tr th:each="vo:${list}">
+          <td width=10% class="text-center" th:text="${vo.no}"></td>
+          <td width=45%><a th:href="@{/board/detail(no=${vo.no})}">[[${vo.subject}]]</a></td>
+          <td width=15% class="text-center" th:text=${vo.name}></td>
+          <td width=20% class="text-center" th:text=${vo.regdate}></td>
+          <td width=10% class="text-center" th:text=${vo.hit}></td>
+        </tr>
+        <tr>
+          <td colspan="5" class="text-center">
+            <a th:href="@{/board/list(page=${curpage>1?curpage-1:curpage})}" class="btn btn-sm btn-danger">이전</a>
+            <span>[[${curpage}]]</span> page / <span>[[${totalpage}]]</span> pages
+            <a th:href="@{/board/list(page=${curpage<totalpage?curpage+1:curpage})}" class="btn btn-sm btn-danger">다음</a>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</body>
+</html>

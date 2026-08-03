@@ -1,0 +1,28 @@
+spring:
+  thymeleaf:
+    cache: false
+    encoding: UTF-8
+    prefix: classpath:templates/
+    suffix: .html
+    mode: HTML
+  datasource:
+    url: jdbc:oracle:thin:@localhost:1521:XE
+    username: hr
+    password: happy
+    driver-class-name: oracle.jdbc.OracleDriver
+  jpa:
+    database: oracle
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.OracleDialect
+        format_sql: true
+        user_sql_comments: true
+
+mybatis:
+  type-aliases-package: com.sist.web.vo
+  mapper-locations: mybatis/mapper/*.xml
+
+logging:
+  level:
+    org.hibernate.SQL: DEBUG
+    org.hibernate.orm.jdbc.bind: TRACE
