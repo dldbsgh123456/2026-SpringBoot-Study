@@ -2,20 +2,6 @@
 
 Spring Data JPA 기반으로 구현한 게시판 CRUD 프로젝트 정리.
 
----
-
-## ▶ 기술 스택
-
-| 구분 | 내용 |
-|---|---|
-| Framework | Spring Boot |
-| 데이터 접근 | Spring Data JPA (Hibernate) |
-| DB | Oracle (시퀀스 기반 PK) |
-| View | Thymeleaf |
-| 기타 | Lombok |
-
----
-
 ## ▶ 전체 구조
 
 ```
@@ -78,8 +64,3 @@ private int no;
 
 ---
 
-## ▶ 남은 개선 포인트 (TODO)
-
-- 비밀번호 해시 처리
-- Controller의 `board/`, `/board/...` 경로 슬래시 표기 통일
-- 예외 처리를 `@ExceptionHandler`에서 커스텀 에러 페이지로 확장
