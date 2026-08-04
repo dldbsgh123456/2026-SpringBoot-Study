@@ -1,19 +1,4 @@
 # 게시판 (Board) CRUD — Spring Boot + JPA + Thymeleaf
-
-Spring Data JPA + Thymeleaf 기반으로 구현한 게시판 CRUD 프로젝트 정리.
-
----
-
-## ▶ 기술 스택
-
-| 구분 | 내용 |
-|---|---|
-| Framework | Spring Boot |
-| 데이터 접근 | Spring Data JPA (Hibernate) |
-| DB | Oracle (시퀀스 기반 PK) |
-| View | Thymeleaf + Bootstrap 3 |
-| 기타 | Lombok |
-
 ---
 
 ## ▶ 전체 구조
