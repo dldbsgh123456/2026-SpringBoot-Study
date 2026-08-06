@@ -1,7 +1,4 @@
 # Spring Boot - Projection / Native Query / 레이아웃 구성 / Docker
-
-**▶ JPA Interface Projection - Entity 대신 필요한 컬럼만 받기**
-
 ```java
 public interface FoodVO {
     public int getNo();
