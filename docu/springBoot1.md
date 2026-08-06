@@ -1,4 +1,4 @@
-# Spring Boot / JPA - 새로 나온 패턴만 정리
+# Spring Boot / JPA
 
 **▶ PK가 문자열(String)인 Entity**
 
