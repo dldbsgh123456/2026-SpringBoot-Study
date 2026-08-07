@@ -4,4 +4,4 @@
 - [26.08.03](./docu/springBoot.md)
 - [26.08.04](./docu/sprinboot-jpa.md) - SpringThymeLeafProject2
 - [26.08.05](./docu/spring-boot-jpa-docker.md) - SpringThymeLeafIncludePriject
-- [26.08.06](.docu/springBoot1.md) -SpringThymeLeafDockerProject
+- [26.08.06](./docu/springBoot1.md) -SpringThymeLeafDockerProject
