@@ -6,5 +6,5 @@
 - [26.08.05](./docu/spring-boot.md) - SpringThymeLeafIncludePriject
 - [26.08.06](./docu/springBoot1.md) -SpringThymeLeafDockerProject
 - [26.08.07](./docu/springBoot07.md) -SpringThymeLeafDockerProject
-- [26.08.10](./douc/springBoot10.md) -SpringThymeLeafDockerProject
+- [26.08.10](./docu/springBoot10.md) -SpringThymeLeafDockerProject
   
