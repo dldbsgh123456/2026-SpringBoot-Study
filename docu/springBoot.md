@@ -102,12 +102,3 @@ private int no;
 > ⚠️ 비밀번호는 현재 평문 비교 방식. 학습용 프로젝트라 유지했으나, 실무 적용 시에는 해시 비교로 교체 필요.
 
 ---
-
-## ▶ 남은 개선 포인트 (TODO)
-
-- 비밀번호 해시 처리
-- Controller의 `board/`, `/board/...` 경로 슬래시 표기 통일
-- 예외 처리를 `@ExceptionHandler`에서 커스텀 에러 페이지로 확장
-- `update_ok.html` / `delete_ok.html`의 alert 기반 결과 처리를 AJAX 방식으로 개선
-- `detail.html`의 `[[${}]]` / `th:text` 표현식 사용 방식 통일
-- Bootstrap 3(2019년 이후 미지원) → 최신 버전 또는 다른 CSS 프레임워크로 교체 검토
