@@ -1,5 +1,5 @@
 # 파일 업로드
-application.yml 추가
+### application.yml 추가
 ```
 server:
   servlet:
@@ -15,4 +15,14 @@ spring:
  spring.servlet.multipart.enabled:true - 파일 업로드 처리 활성화 Spring-Boot는 기본값이 true 명시적으로 써 놓음
  spring.servlet.multipart.amx-file-size - 업로드 파일 하나당 최대 100MB
  spring.servlet.multipart.amx-file-size - 한 번의 요청(파일 중복 가능)으로 최대 용량 100MB
- 
+
+ ### Mapper
+ ```
+@SelectKey(keyProperty="no",resultType=int.class,before=true,statement="SELECT springdataboard.NEXTVAL FROM dual")     
+@Insert("INSERT INTO springdataboard VALUES(#{no},#{name},#{subject},"
+       +"#{content},#{pwd},SYSDATE,0,"
+       +"#{filename},#{filesize},#{filecount})")
+ public void springdataboardInsert(DataBoardVO vo);
+```
+셀렉트키 이용해서 채번함 시퀀스 테이블이 있어서 저렇게 씀  
+없었으면  SELECT NVL(MAX(no)+1, 1) FROM springdataboard
