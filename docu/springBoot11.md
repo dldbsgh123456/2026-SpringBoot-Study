@@ -145,20 +145,7 @@ const range = (start, end) => {
 - 페이지네이션 구조는 `HomeView`와 동일한 패턴
 
 
-### `YoutubeView.vue` — 유튜브 검색
 
-- Pinia를 쓰지 않고 컴포넌트 로컬 `ref`(`title`, `youtubes`)로만 상태 관리
-- `fetch`로 YouTube Data API v3 `search` 엔드포인트 직접 호출
-- 검색어 기본값 `"서울여행"`, 최대 12개 결과, `type=video`로 제한
-
-> 🚨 **보안 이슈 (우선순위 높음)**: API 키가 소스코드에 그대로 하드코딩되어 있음.
-> ```js
-> `https://youtube.googleapis.com/youtube/v3/search?...&key=AIzaSy...`
-> ```
-> 이 상태로 GitHub에 올리면 키가 그대로 공개됨. 다음 중 하나는 반드시 처리하고 올리는 걸 권장:
-> 1. `.env` 파일에 `VITE_YOUTUBE_KEY`로 분리하고 `.gitignore`에 `.env` 추가
-> 2. 이미 커밋된 이력이 있다면 GitHub에만 지우는 게 아니라 **Google Cloud Console에서 키 자체를 재발급**
->    (git history에 남아있으면 지워도 복구 가능)
 
 
 
