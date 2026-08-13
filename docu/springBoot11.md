@@ -144,20 +144,6 @@ const range = (start, end) => {
 - 검색창(`input` + `keydown.enter`) → `find()` 호출 → `recipeFindData(1, fd.value)`
 - 페이지네이션 구조는 `HomeView`와 동일한 패턴
 
-> ⚠️ **버그 의심**: 마지막 페이지(`&raquo;`) 버튼에서
-> ```vue
-> <a @click="move(find_list.pages[3]+1,fd)">&raquo;</a>
-> ```
-> `move`라는 함수를 호출하는데, `<script setup>` 안에는 `move`가 정의되어 있지 않고
-> `recipeFindData`만 정의되어 있음. 클릭 시 콘솔 에러가 나거나 아무 동작도 하지 않을 가능성이 높음.
-> → `recipeFindData(find_list.pages[3]+1, fd)`로 수정 필요.
-
-> ⚠️ **기능 누락**: 검색 결과 카드가
-> ```vue
-> <a href="#"><div class="thumbnail">...</div></a>
-> ```
-> 로만 되어 있어서 클릭해도 상세 페이지로 이동하지 않음. `HomeView`처럼
-> `router-link :to="{name:'recipe_detail', params:{no:vo.no}}"`로 감싸주면 일관성이 맞음.
 
 ### `YoutubeView.vue` — 유튜브 검색
 
@@ -174,12 +160,7 @@ const range = (start, end) => {
 > 2. 이미 커밋된 이력이 있다면 GitHub에만 지우는 게 아니라 **Google Cloud Console에서 키 자체를 재발급**
 >    (git history에 남아있으면 지워도 복구 가능)
 
-### `HelloWorld.vue`, `store/index.js` (Vuex)
 
-- 두 파일 모두 실제 라우트/컴포넌트 어디에서도 import되는 흔적이 없음
-- `HelloWorld.vue`: `vue create` 시 자동 생성되는 튜토리얼용 컴포넌트
-- `store/index.js`: Pinia로 전환하면서 남은 Vuex 잔재로 추정
-- 정리하면서 같이 삭제하거나, 미사용이 확실치 않다면 일단 이슈로만 남겨두고 나중에 확인 권장
 
----
+
 
