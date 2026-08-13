@@ -1,22 +1,5 @@
 # 🍳 레시피 공유 프로젝트 — Frontend 구조 정리
 
-Vue 3 기반 SPA. 백엔드(Spring, `localhost:8080`)에서 레시피 목록/상세/검색 데이터를 받아오고,
-YouTube Data API로 관련 동영상을 검색하는 기능까지 포함된 프로젝트.
-
----
-
-## 📦 기술 스택
-
-| 영역 | 사용 기술 |
-|---|---|
-| 프레임워크 | Vue 3 (`<script setup>` Composition API) |
-| 라우팅 | Vue Router 4 (`createWebHistory`) |
-| 상태관리 | Pinia (실사용) / Vuex (잔재, 미사용 추정) |
-| UI | Bootstrap 3.4.1 (CDN) |
-| HTTP 통신 | axios (레시피), fetch (YouTube) |
-| 빌드 | Vue CLI (`vue-cli-service`) |
-
----
 
 ## 🗂️ 전체 구조도
 
@@ -200,12 +183,3 @@ const range = (start, end) => {
 
 ---
 
-## ✅ 정리 체크리스트
-
-- [ ] YouTube API 키 `.env`로 분리 (+ 필요시 키 재발급)
-- [ ] `RecipeFindView`의 `move()` → `recipeFindData()`로 수정
-- [ ] `RecipeFindView` 검색 결과 카드에 상세페이지 `router-link` 추가
-- [ ] `HeaderCont`의 `active` 클래스 동적 바인딩으로 변경
-- [ ] `store/index.js`(Vuex), `HelloWorld.vue` 사용 여부 확인 후 삭제
-- [ ] axios `baseURL` 분리 (`.env` 기반)
-- [ ] `HeaderCont`의 쉐프/자료실 라우트 — SPA 라우트로 통합할지, 서버 페이지로 유지할지 결정
