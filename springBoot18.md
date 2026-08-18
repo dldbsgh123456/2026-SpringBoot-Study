@@ -1,4 +1,4 @@
-# Java - 람다식(Lambda) & Stream API
+# Java - 람다식(Lambda)
 
 **▶ 람다식 기본 문법**
 
