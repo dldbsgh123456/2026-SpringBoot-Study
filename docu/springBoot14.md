@@ -1,5 +1,3 @@
-# Spring Boot - REST 설계 기준 & 매퍼 선택 기준
-
 **▶ RESTful - HTTP 메소드와 CRUD 매핑**
 
 ```
