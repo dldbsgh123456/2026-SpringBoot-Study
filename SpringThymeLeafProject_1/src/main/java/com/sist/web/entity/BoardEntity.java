@@ -18,7 +18,7 @@ import jakarta.persistence.Table;
 import lombok.Data;
 @Entity // 오라클 column과 매칭 
 @Table(name="jpaboard") 
-@DynamicUpdate // 필요시에 없데이터 설정 
+@DynamicUpdate // 필요시에 업데이트 설정 
 @Data
 // => save(vo) 객체(Entity) === column연결 
 /*
