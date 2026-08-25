@@ -1,7 +1,5 @@
 # Spring Boot - WebSocket(STOMP) 실시간 채팅
 
-**▶ 왜 WebSocket인가**
-
 - HTTP는 요청-응답 한 번으로 끝나는 단방향 통신이라, 실시간 채팅처럼 **서버가 먼저 클라이언트에게 메시지를 밀어 넣어야** 하는 경우엔 맞지 않음
 - WebSocket은 한 번 연결을 맺으면 **서버 ↔ 클라이언트 양방향으로 계속 데이터를 주고받을 수 있는** 연결을 유지함
 - STOMP는 WebSocket 위에서 "구독(subscribe)/발행(publish)" 개념으로 메시지를 주고받게 해주는 프로토콜 — 순수 WebSocket보다 채팅방/토픽 단위 라우팅이 편리해짐
