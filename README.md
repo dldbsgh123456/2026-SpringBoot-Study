@@ -16,7 +16,7 @@
 - [26.08.20](./docu/springBoot20.md)
 - [26.08.21]
 - [26.08.24](./docu/springBoot24.md)
-- [26.08.25]
+- [26.08.25](./docu/springBoot25.md)
 - [26.08.26]
 - 
   
