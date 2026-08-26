@@ -83,16 +83,3 @@ spring:
 - `bootstrap-servers`: 애플리케이션이 최초로 접속할 Kafka 브로커 주소(포트) — 이 프로젝트의 yml에는 주석 처리(`#`)되어 있어서, 실제로 Kafka를 붙이려면 **주석을 풀고 브로커 주소를 지정**해야 정상 동작함
 - 브로커가 여러 대인 클러스터 환경에서는 `localhost:9092,localhost:9093`처럼 콤마로 여러 개 나열 가능 (하나만 지정해도 나머지는 자동으로 인식됨)
 
-**▶ (참고) 이 프로젝트 `application.yml`에서 함께 쓰인 패턴**
-
-```yaml
-server:
-  port: 9090            # 기본 8080 대신 포트 변경 (Nginx 80 / Jenkins 8080과 충돌 방지 목적)
-spring:
-  datasource:
-    url: ${DB_URL}              # 환경변수에서 값을 읽어옴
-    username: ${DB_USERNAME}
-    password: ${DB_PASSWORD}
-```
-
-- `${DB_URL}`처럼 `${}`로 감싸면 **OS 환경변수(또는 실행 시 전달한 시스템 프로퍼티)** 값을 읽어와서 채움 — DB 접속 정보처럼 민감한 값을 yml 파일에 직접 하드코딩하지 않고, 배포 환경(로컬/서버/컨테이너)마다 다른 값을 주입할 수 있게 해줌 (Docker 컨테이너 환경변수, CI/CD 시크릿 등과 연결하기 좋은 구조)
