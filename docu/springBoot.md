@@ -99,6 +99,5 @@ private int no;
 | 상세보기 hit 증가 | `findByNo` → 증가 → 다시 `findByNo` (쿼리 2번) | `save()` 결과를 그대로 반환 (쿼리 1번) |
 | 수정 시 hit 유지 | Controller에서 `vo.setHit(dbvo.getHit())` | Service 내부에서 Builder로 조립 |
 
-> ⚠️ 비밀번호는 현재 평문 비교 방식. 학습용 프로젝트라 유지했으나, 실무 적용 시에는 해시 비교로 교체 필요.
 
 ---
