@@ -18,7 +18,7 @@
 - [26.08.24](./docu/springBoot24.md)
 - [26.08.25](./docu/springBoot25.md)
 - [26.08.26](./docu/springBoot26.md)
-- [26.08.27]
-- [26.08.28]
+- [26.08.27](./docu/springBoot27.md)
+- [26.08.28](./docu/springBoot28.md)
 - [26.08.31](./docu/springBoot31.md)
   
