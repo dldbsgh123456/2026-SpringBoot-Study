@@ -1,7 +1,5 @@
 # Spring Security - 인메모리(하드코딩) 기본 설정
 
-**▶ DB 없이 하드코딩된 사용자로 먼저 테스트하는 버전**
-
 ```java
 public class CustomUserDetailService implements UserDetailsService {
     @Override
