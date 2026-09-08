@@ -1,4 +1,4 @@
-# AWS 배포 ① - jar + rsync 방식 (Docker 없이)
+# AWS 배포 - jar + rsync 방식
 
 **▶ 워크플로우 전체 (Repository Secrets 사용)**
 
