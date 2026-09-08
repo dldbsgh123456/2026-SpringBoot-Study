@@ -1,4 +1,4 @@
-# 1일차 - 다중 데이터소스(Oracle + PostgreSQL) 설정
+ 다중 데이터소스(Oracle + PostgreSQL) 설정
 
 **▶ 왜 DB를 두 개 동시에 연결하나**
 
