@@ -1,4 +1,4 @@
-# 3일차 - Spring AI Embedding으로 레시피 벡터화
+Spring AI Embedding으로 레시피 벡터화
 
 **▶ 전체 흐름**
 
