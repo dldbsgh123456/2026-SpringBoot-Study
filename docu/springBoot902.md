@@ -1,4 +1,4 @@
-# AWS 배포 ② - Docker Compose 방식
+# AWS 배포 - Docker Compose 방식
 
 **▶ 워크플로우 전체 (Repository Secrets 사용)**
 
