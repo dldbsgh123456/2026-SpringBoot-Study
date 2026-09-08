@@ -1,4 +1,4 @@
-# 2일차 - Oracle → PostgreSQL 데이터 마이그레이션
+Oracle → PostgreSQL 데이터 마이그레이션
 
 **▶ 목표 - 한쪽 DB에서 읽어서 다른 쪽 DB에 그대로 저장**
 
