@@ -140,13 +140,3 @@ function escapeHtml(value) {
 
 ---
 
-**▶ 컨트롤러 주석에 남겨진 다음 계획**
-
-```
-1. JavaScript(바닐라) → Pinia로 전환
-2. @ResponseBody 방식 → @RestController로 정리
-3. @Tool (Tool Calling) - 프롬프트 기반 검색으로 확장
-4. 기능별 분리 → MCP
-```
-
-- 지금은 `@Controller` + `@ResponseBody`로 화면과 API를 한 클래스에서 처리하고 있지만, 이후 REST 전용 컨트롤러 분리, LLM의 Tool Calling(함수 호출) 적용, MCP(기능별 서버 분리)까지 확장할 계획이 주석으로 남아있음
