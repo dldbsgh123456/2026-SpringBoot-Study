@@ -1,4 +1,4 @@
-# 5일차 C - Security를 멀티 DataSource 프로젝트에 연동
+# Security를 멀티 DataSource 프로젝트에 연동
 
 **▶ 이미 만들어둔 `oracleDataSource` Bean을 Security가 그대로 재사용**
 
